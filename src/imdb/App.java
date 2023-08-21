@@ -8,12 +8,14 @@ import java.util.List;
 import java.util.Map;
 import java.net.URL;
 import java.io.InputStream;
+
 public class App {
 
 
     public static void main(String[] args) throws Exception{
          // fazer uma conexâo HTTP (protocolo usado para se comunicar na web) e buscar os top 250 filmes
-        String url = "https://imdb-api.com/en/API/Top250Movies/k_ok1icqdq";
+//        String url = "https://imdb-api.com/en/API/Top250Movies/k_ok1icqdq";
+    	String url = "https://imdb-api.com/en/API/Top250Movies/k_aaaaaaaa";
         URI endereco = URI.create(url);
         var client =  HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(endereco).GET().build();
